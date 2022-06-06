@@ -1,0 +1,17 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>icons/user.png</file>
+        <file>icons/face_id_48px.png</file>
+        <file>icons/microsoft_excel_26px.png</file>
+        <file>icons/people_64px.png</file>
+        <file>icons/settings_64px.png</file>
+        <file>icons/csv_40px.png</file>
+        <file>icons/print_32px.png</file>
+        <file>icons/report_file_32px.png</file>
+        <file>icons/exit_32px.png</file>
+        <file>icons/refresh_24px.png</file>
+        <file>icons/video_call_32px.png</file>
+
+    </qresource>
+</RCC>

@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowSystem</class>
+ <widget class="QMainWindow" name="MainWindowSystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1326</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Mirrorlane</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/video_call_32px.png</normaloff>:/icons/video_call_32px.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_manage">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/people_64px.png</normaloff>:/icons/people_64px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Manage Students</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dataset">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/settings_64px.png</normaloff>:/icons/settings_64px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>39</width>
+      <height>39</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Train Dataset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3_face">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/face_id_48px.png</normaloff>:/icons/face_id_48px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>39</width>
+      <height>39</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Facial Recognition</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4_attendance">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/microsoft_excel_26px.png</normaloff>:/icons/microsoft_excel_26px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>39</width>
+      <height>39</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attendance Report</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6_developer">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Developer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>1151</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>451</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777194</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>ADD STUDENTS</string>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>FullName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_fullname">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Fullname..</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2_reg_no">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>70</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>CT100/G/0000/17</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reg No</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_contacts">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Mobile No</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Contactas</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Course</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>School</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_Course">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>220</y>
+         <width>281</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_School">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>270</y>
+         <width>281</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>School of Business And Economics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>School of Health Sciences</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>School of Pure And Applied Sciences</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>School of Engineering And Built Environment</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>School of Hospitality and Textile Technology</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_gender">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>281</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Images</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_load_images">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>410</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load Images</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>370</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Dob</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_Level">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>170</y>
+         <width>281</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEdit_dob">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>370</y>
+         <width>281</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_pix_img">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>410</y>
+         <width>171</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6_input_error">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>510</y>
+         <width>361</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_add_student">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10_update">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>550</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_delete">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>550</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>550</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search Student</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4_search">
+      <property name="geometry">
+       <rect>
+        <x>602</x>
+        <y>30</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>RegNo....</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_show_all">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show All</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icons.qrc">
+        <normaloff>:/icons/refresh_24px.png</normaloff>:/icons/refresh_24px.png</iconset>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_student_data">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>80</y>
+        <width>741</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Fullname</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RegNo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Contacts</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Level</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Course</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>School</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DOB</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Train the system</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_stat_training">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Training</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6_training_progress">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>401</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Load Recognizer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6_camera">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>541</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_start_face">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>500</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>500</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cool btn</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>321</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Attendance Info</string>
+      </property>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>View and Update Attendance</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reg No</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>70</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>FullName</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>170</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>120</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>230</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Update</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Export to Excel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>330</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>390</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Delete Attendance</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>430</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>502</x>
+        <y>10</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Student Reg No</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>20</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search Student</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>10</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show All</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>60</y>
+        <width>701</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Fullname</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RegNo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Contacts</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>School</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>New Column</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Course</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Dob</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_6_time">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>0</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6_time_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1326</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionView_Attendance"/>
+    <addaction name="actionExport_to_Excel"/>
+    <addaction name="actionExport_to_CSV"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionShow_all_data"/>
+    <addaction name="actionToolbars"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionFacial_Recognition_Software"/>
+    <addaction name="actionDeveloper"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionReport_a_bug"/>
+    <addaction name="actionMake_Suggestions"/>
+    <addaction name="actionManual_usage"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionView_Attendance">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/report_file_32px.png</normaloff>:/icons/report_file_32px.png</iconset>
+   </property>
+   <property name="text">
+    <string>View Attendance</string>
+   </property>
+   <property name="toolTip">
+    <string>Preview attendance list</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionExport_to_Excel">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/microsoft_excel_26px.png</normaloff>:/icons/microsoft_excel_26px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export to Excel</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionExport_to_CSV">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/csv_40px.png</normaloff>:/icons/csv_40px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export to CSV</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/print_32px.png</normaloff>:/icons/print_32px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/exit_32px.png</normaloff>:/icons/exit_32px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionShow_all_data">
+   <property name="text">
+    <string>Show all data</string>
+   </property>
+  </action>
+  <action name="actionToolbars">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Toolbars</string>
+   </property>
+  </action>
+  <action name="actionReport_a_bug">
+   <property name="text">
+    <string>Report a bug</string>
+   </property>
+  </action>
+  <action name="actionMake_Suggestions">
+   <property name="text">
+    <string>Make Suggestions</string>
+   </property>
+  </action>
+  <action name="actionFacial_Recognition_Software">
+   <property name="text">
+    <string>Facial Recognition Software</string>
+   </property>
+  </action>
+  <action name="actionDeveloper">
+   <property name="text">
+    <string>Developer</string>
+   </property>
+  </action>
+  <action name="actionManual_usage">
+   <property name="text">
+    <string>Manual usage</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
