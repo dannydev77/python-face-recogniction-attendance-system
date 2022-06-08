@@ -27,9 +27,6 @@ from main_app import Ui_MainWindowSystem
 
 logging.basicConfig(filename='Attendance.log', level=logging.INFO, format='%(message)s',
                     datefmt='%Y-%m-%d %H:%M')
-# set global values to
-COUNTER = 0
-LAST_EPOCH = 0
 
 
 # developer infomation
@@ -229,7 +226,6 @@ class MainWindow(QMainWindow):
             self.ui.actionDeveloper.triggered.connect(self.about)
             self.ui.actionManual_usage.triggered.connect(self.manual)
 
-            self.ui.pushButton_load_images.clicked.connect(self.browseImage)
             self.ui.pushButton_add_student.clicked.connect(self.add_student)
             self.ui.pushButton_10_update.clicked.connect(self.update_student)
             self.ui.pushButton_show_all.clicked.connect(self.show_all_students)
@@ -274,13 +270,7 @@ class MainWindow(QMainWindow):
 
     # =================== manage students tab ==============================
 
-    # open image dialog to load a photo
-    def browseImage(self):
-        file_name = QFileDialog.getOpenFileName(self, 'Open Image File', 'D:\\', 'Image Files(*.jpg)')
-        img_path = file_name[0]
-        pix_img = QPixmap(img_path)
-        self.ui.label_pix_img.setPixmap(QPixmap(pix_img))
-
+    
     def add_student(self):
         '''
         this function captures the student details including the images
